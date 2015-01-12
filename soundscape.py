@@ -8,8 +8,8 @@ from utils import freesound
 from utils import sound_files
 
 freesound.credentials = {
-    'client_id': 'eba2aab43a45ae11b7ab',
-    'api_key': '9c285499c27fdb0322da949ef05d5189a09dd4e4'
+    'client_id': 'YOUR ID',
+    'api_key': 'YOUR KEY'
 }
 
 # 1 - scraping
@@ -18,7 +18,8 @@ freesound.credentials = {
 results = freesound.search('factory', max=50)
 print('found %s results' % len(results))
 
-# Those are the directories where we will save the sound files
+# Those are the directories where we will save the sound files.
+# You can change them if you want to save the files somewhere else.
 mp3_dir = '/tmp/soundscape/mp3'
 wav_dir = '/tmp/soundscape/wav'
 
